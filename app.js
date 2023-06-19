@@ -14,7 +14,7 @@ app.use(express.json());
 
 const sequelize = new Sequelize(process.env.DATABASE_URL);
 
-// Process FORM intput and put the data on req.body
+// Process FORM intput and put the data on req.body 
 app.use(express.urlencoded({ extended: true }));
 
 // Create a Sequelize model
