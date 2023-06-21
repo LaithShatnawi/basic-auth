@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "watch": "nodemon app.js",
+    "start": "NODE_ENV=production node app.js",
+    "watch": "NODE_ENV=development nodemon app.js",
     "init:config": "sequelize init:config",
     "db:create": "sequelize db:create",
     "test-watch": "NODE_ENV=test jest --watchAll",
@@ -27,7 +27,7 @@
     "pg": "^8.6.0",
     "sequelize": "^6.6.2",
     "sequelize-cli": "^6.2.0",
-    "sqlite3": "^5.0.2"
-  },
-  "devDependencies": {}
+    "sqlite3": "^5.0.2",
+    "supertest": "^6.3.3"
+  }
 }
